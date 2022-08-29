@@ -26,11 +26,11 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
     res.statusCode = 200;
     res.setHeader('Content-Type','text/html');
     res.end(data);
-  }
+  })
   
   server.listen(port, () => {
     console.log('Server listening on port ${port}');
-  }
+  })
 });
 
 // Define a const `server` as an arrow function using http.createServer. 
